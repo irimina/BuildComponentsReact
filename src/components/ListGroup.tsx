@@ -1,18 +1,13 @@
 function ListGroup(){
 
-// set up a demmo arry
-
-const items = ['New York', 'London', 'Tokyo', 'San Francisco'];
-
-//take each item and convert it to an item of a different type, in this case a list
-//item that includes the item itself
-//we use {} to render data dynamically in JSX
-// in JSX we can only use HTML element or other React components 
-// we are adding a ley prop ( property) for each item in this cose the item itself
+let items = ['New York', 'London', 'Tokyo', 'San Francisco'];
+items = [];//test the empty state
+//if (items.length === 0) return <p>No items found</p>;
 
     return (
         <>
-        <h1>List Group Heading</h1>
+        <h1>My List</h1>
+            {items.length === 0 && <p>No items found</p>}
             <ul className="list-group">
               {items.map(item => <li key={item}>{item}</li>)}   
             </ul>
@@ -20,6 +15,8 @@ const items = ['New York', 'London', 'Tokyo', 'San Francisco'];
     )
    
 }
+
+
 
 export default ListGroup;
 // now we need to add this in our Aoo.tsx
