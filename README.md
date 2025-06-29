@@ -1,5 +1,12 @@
 #Sequence of lessons
 
+## 4 Handing Events
+
+- apply a Bootstrap class to the list
+  - <li className="list-group-item" key={item}>{item}</li>
+- we will click on each item and see the output in the console using onClick()
+  - <li className="list-group-item" key={item} onClick = {() => console.log("clicked")} >{item}</li>
+
 ## 3 Conditional Rendering
 
 1. We render contents based on certain conditions
