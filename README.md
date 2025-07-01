@@ -1,5 +1,34 @@
 #Sequence of lessons
 
+## 9 Passing Children
+How can you create a component that can accept children?
+Steps:
+ - create a new component named Alert.tsx
+ - to display an alert we get some code from bootstrap
+ - under DOCS we should find alerts   https://getbootstrap.com/docs/5.3/components/alerts/
+ - we can pass children to a component
+
+## 8 State vs Props
+
+state
+
+- refers to the data managed by the component
+- are similar to local variable and they can be changed
+
+props
+
+- input passed to a component
+- similar to function arguments
+- not changeable, read only
+
+## 7 Passing Functions via Props
+
+Something should happen after an item is selected; the user is directed to another page, etc
+
+## 6 Passing Data via Props
+
+How can we make a component reusable? Props, they are inputs to our components
+
 ## 5 Managing state
 
 - we tell React that state of a component will change over time
